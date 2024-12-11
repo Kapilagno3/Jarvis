@@ -92,8 +92,8 @@ def taskExecution():
         elif "open terminal" in query:
             os.system("start cmd")
         elif "introduce" in query:
-            speak("i am jarvis. i have been created by Kapil Agnihotri using a total of 16 python libraries")
-            speak(".My capabilities include scheduling whatsapp messages, playing yt videos, opening and closing apps, searching the web. the next capability to be included is linking me with generative ai")
+            speak("i am jarvis. i have been created by Kapil Agnihotri using a total of 20 python libraries")
+            speak(".My capabilities include facial recognition, playing yt videos, opening and closing apps, searching the web.")
         # camera
         elif "open camera"in query:
             cam=cv2.VideoCapture(0)
@@ -147,7 +147,7 @@ def taskExecution():
                 print(e)
                 speak("no possible")
         # switch tab
-        elif "switch tab" in query:
+        elif "change tab" in query:
             pyautogui.keyDown("alt")
             pyautogui.press("tab")
             time.sleep(1)
@@ -213,18 +213,6 @@ def taskExecution():
             os.system("shutdown /s /t 5")
 
 
-
-
-
-# if __name__== "__main__":
-#     while True:
-#         permission=takeCommand()
-#         if "activate" in permission:
-#             taskExecution()
-#         elif "offline"in permission:
-#             speak("thank you sir")
-#             speak("exiting program")
-#             sys.exit()
        
 
 
